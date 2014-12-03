@@ -1,17 +1,15 @@
 linux-notes
 ===========
-# Linux Commands
-## General Commands
-### Show CPU Info
+#### Show CPU Info
 ```sh
 cat /proc/cpuinfo
 ```
-### Generate SSL Certificate
+#### Generate SSL Certificate
 ```sh
 openssl req -new -newkey rsa:2048 -nodes -keyout server.key -out server.csr
 ```
 
-### Format USB Drive
+#### Format USB Drive
 ``` sh
 fdisk /dev/sdd
 o
@@ -24,42 +22,47 @@ cryptsetup luksOpen /dev/sdd1 LUKS001
 mkfs.vfat /dev/mapper/LUKS001 -n LUKS001
 cryptsetup luksClose LUKS001
 ```
-### Remove a user from a group
+
+#### Remove a user from a group
 ```sh
 sudo deluser user group
 ```
 
-### Show Kernel Version
+#### Show Kernel Version
 ```sh
 uname -r
 ```
-### Set Locale
+
+#### Set Locale
 ```sh
 sudo dpkg-reconfigure locales
 ```
 
-### Show OS Version
+#### Show OS Version
 ```sh
 lsb_release -a #=> Show OS Version
 cat /proc/version
 cat /etc/issue
 cat /etc/os-release
 ```
-### Shutdown VPS
+
+#### Shutdown VPS
 ```sh
 sudo shutdown -h now
 ```
-### Generate SSH Key
+
+#### Generate SSH Key
 ```sh
 ssh-keygen -t rsa -C "your_email@example.com"
 ssh-keygen -t rsa -f temp.key
 ```
 
-### Make Symbolic Link
+#### Make Symbolic Link
 ```sh
 ln -s /path/to/file /path/to/symlink
 ```
-### Search Package
+
+#### Search Package
 ```sh
 # Debian
 sudo apt-cache search <package_name>
@@ -67,26 +70,31 @@ sudo apt-cache search <package_name>
 # Red Hat
 sudo yum search <package_name>
 ```
-### Show Package Information
+
+#### Show Package Information
 ```sh
 sudo yum info <package_name>
 sudo yum --enablerepo=epel info <package_name>
 ```
-### Execute a Command at Boot
+
+#### Execute a Command at Boot
 ```sh
 # Debian
 /etc/rc.local #=> Put your cmd in this file
 ```
-### Show Running Processes
+
+#### Show Running Processes
 ```sh
 ps auxf
 ```
-### Show Groups
+
+#### Show Groups
 ```sh
 # Red Hat
 sudo yum grouplist
 ```
-### Change Hostname
+
+#### Change Hostname
 ```sh
 sudo vi /etc/sysconfig/network
   HOSTNAME=<new_hostname>
@@ -94,59 +102,69 @@ sudo vi /etc/sysconfig/network
 # You can apply the new hostname without reboot
 sudo hostname <new_hostname>
 ```
-### Add EPEL Repos
+
+#### Add EPEL Repos
 ```sh
 curl -O http://dl.fedoraproject.org/pub/epel/beta/7/x86_64/epel-release-7-0.2.noarch.rpm
 sudo rpm -ivh epel-release-7-0.2.noarch.rpm
 yum --enablerepo=epel info zabbix
 yum --enablerepo=epel install zabbix
 ```
-### Show login history of users
+
+#### Show login history of users
 ```sh
 sudo last
 ```
-### Show who is logged in
+
+#### Show who is logged in
 ```sh
 sudo who
 ```
-### Find out when was the system last rebooted
+
+#### Find out when was the system last rebooted
 ```sh
 sudo last reboot
 ```
-### See when did someone last log in to the system
+
+#### See when did someone last log in to the system
 ```sh
 sudo lastlog
 ```
-## Network
-### Get HTTP Server Headers
+
+#### Get HTTP Server Headers
 ```sh
 curl -I http://example.com
 ```
-### Show Established Connections
+
+#### Show Established Connections
 ```sh
 netstat -an | grep ESTABLISHED
 netstat -natp
 ```
-### Show Listening Ports (udp/tcp)
+
+#### Show Listening Ports (udp/tcp)
 ```sh
 netstat -nlutp
 ```
-## Others
-### AWS (Amazon Web Services)
+
+#### AWS (Amazon Web Services)
 ```sh
 sudo -s #=> Become root
 ```
-### Video Card Informations
+
+#### Video Card Informations
 ```sh
 lspci | grep VGA #=> Identify your hardware (even if not configured at all)
 find /dev -group video #=> Check if the correct kernel driver is loaded
 glxinfo | grep -i vendor #=> Check if the correct X driver is loaded
 ```
-### Terminal Softwares
+
+#### Terminal Softwares
 ```sh
 apt-get install w3m #=> Terminal Web Browser
 ```
-### How to mount a remote directory over ssh on Linux
+
+#### How to mount a remote directory over ssh on Linux
 ```sh
 sudo apt-get install sshfs
 sudo usermod -a -G fuse <user_name>
@@ -159,7 +177,8 @@ fusermount -u <local_mount_point>
 sudo vi /etc/fstab
 sshfs#my_user@remote_host:/path/to/directory <local_mount_point> fuse user 0 0
 ```
-### Kernel Upgrade (official)
+
+#### Kernel Upgrade (official)
 ```sh
 # Show available kernel images
 apt-cache search linux-image
@@ -167,14 +186,15 @@ apt-cache search linux-image
 # Install kernel
 sudo apt-get install linux-image-x.x.x-xx
 ```
-### Kernel Upgrade (not-official)
+
+#### Kernel Upgrade (not-official)
 ```sh
 # Add Debian backports
 sudo vim /etc/apt/sources.list
   deb http://http.debian.net/debian wheezy-backports main
 ```
   
-### ISO to USB Stick
+#### ISO to USB Stick
 ```sh
 # Get USB Stick place
 sudo ls -l /dev/disk/by-id/*usb*
@@ -182,11 +202,12 @@ cd ~/downloads
 sudo dd if=<isofile> of=/dev/sdb bs=4M; sync
 # 
 ```
-## To classified
+
+#### To classified
 ```sh
 head .bash_history #=> Show last commands
 ```
-
+#### From a web site ... for video card driver
 
 You can download the driver for your video card for Ubuntu 64bit from here. Assuming that you are using Ubuntu 64bit now. If you installed Ubuntu 32 bit, there is 331 version of the same driver for Ubuntu 32bit. Save your driver somewhere where you can easily access it, like your user home directory or inside a newly created nvidia directory in your user home directory.
 
