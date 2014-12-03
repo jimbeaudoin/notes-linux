@@ -207,7 +207,7 @@ sudo dd if=<isofile> of=/dev/sdb bs=4M; sync
 ```sh
 head .bash_history #=> Show last commands
 ```
-#### From a web site ... for video card driver
+#### From a web site (I do not remember where. Sry!)... for video card driver
 
 You can download the driver for your video card for Ubuntu 64bit from here. Assuming that you are using Ubuntu 64bit now. If you installed Ubuntu 32 bit, there is 331 version of the same driver for Ubuntu 32bit. Save your driver somewhere where you can easily access it, like your user home directory or inside a newly created nvidia directory in your user home directory.
 
