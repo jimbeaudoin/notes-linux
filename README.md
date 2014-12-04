@@ -9,7 +9,7 @@ cat /proc/cpuinfo
 openssl req -new -newkey rsa:2048 -nodes -keyout server.key -out server.csr
 ```
 
-### Show syslog
+#### Show syslog
 ```sh
 tail -f /var/log/messages
 ```
