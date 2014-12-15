@@ -1,6 +1,11 @@
 linux-notes
 ===========
 
+#### Show Dependencies
+```sh
+aptitude show nginx
+```
+
 #### File Checksum
 ```sh
 shasum -a 256 nginx-1.6.2.tar.gz
