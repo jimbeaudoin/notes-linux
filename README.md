@@ -88,6 +88,16 @@ sudo apt-cache search <package_name>
 sudo yum search <package_name>
 ```
 
+#### Install Package
+```sh
+# Install
+dpkg -l | grep 'tcl'
+# Check
+dpkg -l | grep 'tcl'
+# Remove
+dpkg -r tcl8.4
+``` 
+
 #### Show Package Information
 ```sh
 sudo yum info <package_name>
