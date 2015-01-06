@@ -18,7 +18,7 @@ time dd if=/dev/urandom of=150MB bs=1 count=157286400
 time dd if=/dev/urandom of=200MB bs=1 count=209715200
 # 250MB
 time dd if=/dev/urandom of=250MB bs=1 count=262144000
-# 300
+# 300MB
 time dd if=/dev/urandom of=300MB bs=1 count=314572800
 ```
 
