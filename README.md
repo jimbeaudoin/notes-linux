@@ -1,5 +1,27 @@
 linux-notes
 ===========
+#### Create Random Binary Files
+```sh
+# 1KB
+time dd if=/dev/urandom of=1KB bs=1 count=1024
+# 1MB
+time dd if=/dev/urandom of=1MB bs=1 count=1048576
+# 25MB
+time dd if=/dev/urandom of=25MB bs=1 count=26214400
+# 50 MB
+time dd if=/dev/urandom of=50MB bs=1 count=52428800
+# 100 MB
+time dd if=/dev/urandom of=100MB bs=1 count=104857600
+# 150MB
+time dd if=/dev/urandom of=150MB bs=1 count=157286400
+# 200MB
+time dd if=/dev/urandom of=200MB bs=1 count=209715200
+# 250MB
+time dd if=/dev/urandom of=250MB bs=1 count=262144000
+# 300
+time dd if=/dev/urandom of=300MB bs=1 count=314572800
+```
+
 
 #### Show Dependencies
 ```sh
