@@ -23,11 +23,17 @@ time dd if=/dev/urandom of=300MB bs=1 count=314572800
 # 400MB
 time dd if=/dev/urandom of=400MB bs=1 count=419430400
 # 500MB
-time dd if=/dev/urandom of=400MB bs=1 count=419430400
+time dd if=/dev/urandom of=500MB bs=1 count=524288000
 # 600MB
-time dd if=/dev/urandom of=400MB bs=1 count=419430400
-# 400MB
-time dd if=/dev/urandom of=400MB bs=1 count=419430400
+time dd if=/dev/urandom of=600MB bs=1 count=629145600
+# 700MB
+time dd if=/dev/urandom of=700MB bs=1 count=734003200
+# 800MB
+time dd if=/dev/urandom of=800MB bs=1 count=838860800
+# 900MB
+time dd if=/dev/urandom of=900MB bs=1 count=943718400
+# 1000MB
+time dd if=/dev/urandom of=1000MB bs=1 count=1048576000
 ```
 
 
