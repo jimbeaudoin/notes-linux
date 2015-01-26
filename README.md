@@ -250,11 +250,13 @@ apt-cache search linux-image
 sudo apt-get install linux-image-x.x.x-xx
 ```
 
-#### Kernel Upgrade (not-official)
+#### Kernel Upgrade (backports)
 ```sh
-# Add Debian backports
+# Add Debian backports source
 sudo vim /etc/apt/sources.list
   deb http://http.debian.net/debian wheezy-backports main
+  
+sudo apt-get -t wheezy-backports install linux-image-amd64
 ```
   
 #### ISO to USB Stick
