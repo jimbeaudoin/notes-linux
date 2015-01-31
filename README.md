@@ -127,7 +127,7 @@ sudo yum search <package_name>
 #### Install Package
 ```sh
 # Install
-dpkg -l | grep 'tcl'
+sudo dpkg -i package.deb
 # Check
 dpkg -l | grep 'tcl'
 # Remove
