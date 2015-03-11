@@ -59,6 +59,9 @@ openssl req -new -newkey rsa:2048 -nodes -keyout server.key -out server.csr
 # Private key and SSL certificate in unencrypted PEM format.
 openssl rsa -in privateKey.key -text > private.pem
 openssl x509 -inform PEM -in www_mydomain_com.crt > public.pem
+
+# Check Certificate
+openssl s_client -showcerts -connect yourapp.com:443
 ```
 
 #### Show syslog
