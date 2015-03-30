@@ -1,4 +1,4 @@
-linux-notes
+notes-linux
 ===========
 #### Create Random Binary Files
 ```sh
