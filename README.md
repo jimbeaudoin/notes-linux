@@ -340,3 +340,5 @@ Nvidia installer automatically installs the driver, and at the end it will ask y
 to save your new nvidia configuration in /etc/X11/xorg.conf.
 ```
 It can happen that after reboot your system shows a black screen or enters the low graphics mode. To fix this you should exit again to the console terminal, login with your username and password, and use the code provided above sudo nvidia-xconfig and also make use of the following tutorial. It is meant to fix the greeter assuming that they haven't fixed this bug in Ubuntu 14.04.
+--
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">notes-linux</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://jim-beaudoin.com" property="cc:attributionName" rel="cc:attributionURL">Jimmy Beaudoin</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
