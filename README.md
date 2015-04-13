@@ -1,7 +1,7 @@
 notes-linux
 ===========
 
-#### Debian Graphic Card Utilty
+#### Debian Graphic Card Utility
 ```sh
 sudo apt-get install mesa-utils
 ```
