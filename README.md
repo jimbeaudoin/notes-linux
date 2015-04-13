@@ -1,5 +1,10 @@
 notes-linux
 ===========
+#### Add User to sudo Group
+```sh
+usermod -a -G sudo <username>
+```
+
 #### Create Random Binary Files
 ```sh
 # 1KB
