@@ -1,5 +1,11 @@
 notes-linux
 ===========
+
+#### Debian Graphic Card Utilty
+```sh
+sudo apt-get install mesa-utils
+```
+
 #### Add User to sudo Group
 ```sh
 usermod -a -G sudo <username>
