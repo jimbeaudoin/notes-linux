@@ -124,8 +124,7 @@ sudo shutdown -h now
 
 #### Generate SSH Key
 ```sh
-ssh-keygen -t rsa -C "your_email@example.com"
-ssh-keygen -t rsa -f temp.key
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
 #### Make Symbolic Link
