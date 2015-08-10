@@ -317,7 +317,7 @@ And you can also disable the Kernel Nouveau by typing these lines in a terminal 
 ```
 and after that
 ```
-    update-initramfs -u
+    sudo update-initramfs -u
 ```
 Now you can reboot your computer, and when you get to the login prompt, press Ctrl+Alt+F1 to exit to the terminal console. Login with your username and password.
 
