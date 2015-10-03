@@ -65,7 +65,13 @@ cat /proc/cpuinfo
 ```
 #### Generate SSL Certificate
 ```sh
-openssl req -new -newkey rsa:2048 -nodes -keyout server.key -out server.csr
+openssl req -new -newkey rsa:4096 -nodes -keyout server.key -out server.csr
+
+# Generate self signed certificate
+openssl req -x509 -sha256 -newkey rsa:4096 -keyout server.key -out server.crt -nodes -days 36500
+
+# Generate a DH for nginx (Take some times)
+openssl dhparam -out dhparam.pem 4096
 
 # Private key and SSL certificate in unencrypted PEM format.
 openssl rsa -in privateKey.key -text > private.pem
