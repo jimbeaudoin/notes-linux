@@ -65,7 +65,8 @@ cat /proc/cpuinfo
 ```
 #### Generate SSL Certificate
 ```sh
-openssl req -new -newkey rsa:4096 -nodes -keyout server.key -out server.csr
+# Generate a web certificate & CSR
+openssl req -new -newkey rsa:2048 -nodes -keyout server.key -out server.csr
 
 # Generate self signed certificate
 openssl req -x509 -sha256 -newkey rsa:4096 -keyout server.key -out server.crt -nodes -days 36500
