@@ -82,7 +82,7 @@ openssl x509 -inform PEM -in www_mydomain_com.crt > public.pem
 openssl s_client -showcerts -connect yourapp.com:443
 
 # Generate an RSA keypair with a 4096 bit private key
-openssl genrsa -out private_key.pem 4096
+openssl genrsa -aes256 -out private_key.pem 4096
 
 # Extracting the public key from an RSA keypair
 openssl rsa -pubout -in private_key.pem -out public_key.pem
