@@ -1,6 +1,12 @@
 notes-linux
 ===========
 
+#### Stop Intel Wireless Led Blink
+```sh
+sudo vim /etc/modprobe.d/wlan-blink.conf
+  options iwlwifi led_mode=1
+```
+
 #### Debian Graphic Card Utility
 ```sh
 sudo apt-get install mesa-utils
