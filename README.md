@@ -92,6 +92,9 @@ openssl genrsa -aes256 -out private_key.pem 4096
 
 # Extracting the public key from an RSA keypair
 openssl rsa -pubout -in private_key.pem -out public_key.pem
+
+# Lets Encrypt
+./letsencrypt-auto certonly --standalone -d example.com -d www.example.com --rsa-key-size 4096
 ```
 
 #### Show syslog
