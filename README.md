@@ -1,6 +1,15 @@
 notes-linux
 ===========
 
+### Environment Variables
+```
+# Globals
+/etc/environment
+
+# By Profile
+~/.profile
+```
+
 ### Create a swap
 ```
 sudo /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
