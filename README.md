@@ -1,6 +1,16 @@
 notes-linux
 ===========
 
+### Create a swap
+```
+sudo /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+sudo /sbin/mkswap /var/swap.1
+sudo /sbin/swapon /var/swap.1
+
+# Edit /etc/fstab and add the following at the bottom to make the swap available at reboot:
+/var/swap.1 swap swap defaults 0 0
+```
+
 #### Stop Intel Wireless Led Blink
 ```sh
 sudo vim /etc/modprobe.d/wlan-blink.conf
