@@ -84,9 +84,12 @@ shasum -a 256 nginx-1.6.2.tar.gz
 b5608c2959d3e7ad09b20fc8f9e5bd4bc87b3bc8ba5936a513c04ed8f1391a18  nginx-1.6.2.tar.gz
 ```
 
-#### Show CPU Info
+#### General
 ```sh
+# Show CPU Info
 cat /proc/cpuinfo
+# Tail a file
+tail -f <file_name>
 ```
 #### Generate Certificate
 ```sh
