@@ -1,6 +1,12 @@
 notes-linux
 ===========
 
+### Turn Off TouchPad Click
+```
+sudo vim /etc/xdg/lxsession/Lubuntu/autostart
+  synclient MaxTapTime=0
+```
+
 ### Environment Variables
 ```
 # Globals
