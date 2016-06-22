@@ -3,7 +3,8 @@ notes-linux
 
 ### Turn Off TouchPad Click
 ```
-synclient MaxTapTime=0
+vim ~/.config/lxsession/Lubuntu/autostart 
+  synclient MaxTapTime=0
 ```
 
 ### Environment Variables
