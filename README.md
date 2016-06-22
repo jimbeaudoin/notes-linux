@@ -1,6 +1,11 @@
 notes-linux
 ===========
 
+### Date Format
+```
+%a, %d %b %Y | %T
+```
+
 ### Turn Off TouchPad Click
 ```
 vim ~/.config/lxsession/Lubuntu/autostart 
