@@ -1,5 +1,13 @@
 notes-linux
 ===========
+### Lubuntu Encrypted Install Fix
+```
+- Boot via "Try Lubuntu"
+- Open Terminal
+- Enter "sudo swapoff --all"
+- Start Installation
+```
+
 
 ### Date Format
 ```
