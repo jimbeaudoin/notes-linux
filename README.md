@@ -1,7 +1,7 @@
 notes-linux
 ===========
 
-### Show Folder Siz
+### Show Folder Size
 ```
 du -hs <folder_path>
 ```
