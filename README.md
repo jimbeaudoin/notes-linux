@@ -1,5 +1,11 @@
 notes-linux
 ===========
+
+### Show Folder Siz
+```
+du -hs <folder_path>
+```
+
 ### Lubuntu Encrypted Install Fix
 ```
 - Boot via "Try Lubuntu"
